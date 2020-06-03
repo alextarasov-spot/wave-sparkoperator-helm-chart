@@ -1,4 +1,6 @@
+{{- if ne .Release.Namespace "default"}}
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: wave-sparkoperator
+  name: {{ .Release.Namespace }}
+{{- end }}  
