@@ -1,0 +1,6 @@
+dependencies:
+- name: sparkoperator
+  repository: http://storage.googleapis.com/kubernetes-charts-incubator
+  version: 0.7.1
+digest: sha256:7cf8e87dac452dcfcbaf044892de749e92ec1e3735e2ce06b54d295362a9e1d5
+generated: "2020-06-03T12:54:25.310799+03:00"
