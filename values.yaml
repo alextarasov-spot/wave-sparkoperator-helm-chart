@@ -1,9 +1,12 @@
-operatorImageName: gcr.io/spark-operator/spark-operator
-operatorVersion: v1beta2-1.1.2-2.4.5
 
-sparkJobNamespace: "wave-applications"
-## The webhook will only operate on namespaces with this label, specified in the form key1=value1,key2=value2
-## empty string will operate on all namespaces
-webhookNamespaceSelector: "wave-app"
 
-enableWebhook: true
+# Values for subchart of sparkoperator
+sparkoperator: 
+    enableWebhook: true
+    deployChart: true
+    ## The webhook will only operate on namespaces with this label, specified in the form key1=value1,key2=value2
+    ## empty string will operate on all namespaces
+    webhookNamespaceSelector: "wave-app"
+    sparkJobNamespace: "wave-applications"
+    operatorImageName: gcr.io/spark-operator/spark-operator
+    operatorVersion: v1beta2-1.1.2-2.4.5
