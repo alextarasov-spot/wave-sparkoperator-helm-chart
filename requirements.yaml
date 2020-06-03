@@ -1,0 +1,5 @@
+dependencies:
+- name: sparkoperator
+  version: v1beta2-1.1.2-2.4.5
+  repository: http://storage.googleapis.com/kubernetes-charts-incubator
+  condition: sparkoperator.deployChart
